@@ -20,7 +20,7 @@ public class BeautyButton extends JButton {
         this.setForeground(Color.WHITE);
         this.setOpaque(false);
         this.setBounds(x, y, ancho, alto);
-        this.setFont(appleFont());
+        this.setFont(quickSandFont());
 
     }
 
@@ -29,12 +29,12 @@ public class BeautyButton extends JButton {
      * @return Fuente de Apple
      */
 
-    public Font appleFont() {
+    public Font quickSandFont() {
         try {
-            Font appleFont = Font.createFont(Font.TRUETYPE_FONT,
+            Font quickSandFont = Font.createFont(Font.TRUETYPE_FONT,
                     new FileInputStream(new File("src/Fuentes/MYRIADAT.TTF"))).
                     deriveFont(Font.PLAIN, 14);
-            return appleFont;
+            return quickSandFont;
         } catch (FontFormatException e) {
             e.printStackTrace();
         } catch (IOException e) {

@@ -7,23 +7,18 @@ import java.awt.*;
 /**
  * Created by esva on 9/05/17.
  */
-public class BeautyList extends JList {
+public class BeautyList extends JScrollPane {
 
     public BeautyList(DefaultListModel dlm, int x, int y, int ancho, int alto) {
-        this.setModel(dlm);
-        this.setForeground(Color.WHITE);
-        this.setFont(Utilidades.quickSandFont());
-        this.setBackground(new Color(0, 0, 0, 198));
-        this.setVisible(true);
+        JList lista = new JList(dlm);
+        lista.setLayoutOrientation(JList.VERTICAL);
+        lista.setForeground(Color.WHITE);
+        lista.setFont(Utilidades.quickSandFont());
+        lista.setBackground(new Color(0, 0, 0, 198));
+        this.add(lista);
+        this.setViewportView(lista);
+        this.setPreferredSize(new Dimension(ancho, alto));
         this.setBounds(x, y, ancho, alto);
-    }
-
-    public static void main(String[] args) {
-        JFrame f = new JFrame("sf");
-        f.setDefaultCloseOperation(3);
-        f.setSize(400,400);
-        f.setLocationRelativeTo(null);
-        f.setVisible(true);
     }
 
 }

@@ -40,10 +40,10 @@ public class Utilidades {
 
     public static Font quickSandFont() {
         try {
-            Font appleFont = Font.createFont(Font.TRUETYPE_FONT,
+            Font quickSandFont = Font.createFont(Font.TRUETYPE_FONT,
                     new FileInputStream(new File("src/Fuentes/Quicksand.otf"))).
-                    deriveFont(Font.PLAIN, 16);
-            return appleFont;
+                    deriveFont(Font.PLAIN, 12);
+            return quickSandFont;
         } catch (FontFormatException e) {
             e.printStackTrace();
         } catch (IOException e) {

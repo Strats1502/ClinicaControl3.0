@@ -1,14 +1,10 @@
 package ComponentesBeauty;
 
-import Conexion.ComprobarSQL;
-import Vistas.CustomVista;
-import oracle.jrockit.jfr.JFR;
-
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import Utilidades.Utilidades;
 
 /**
  * Created by esva on 8/05/17.
@@ -25,17 +21,17 @@ public class BeautyInputRoot extends JPanel {
         this.setLayout(null);
 
         JLabel fondo = new JLabel();
-        fondo.setIcon(CustomVista.establecerImagen("colorGris", 450, 130));
+        fondo.setIcon(Utilidades.establecerImagen("colorGris", 450, 130));
         fondo.setBounds(0,0, 450, 140);
 
         JLabel mensaje = new JLabel("Contraseña de Superusuario");
         mensaje.setBounds(20, 20, 450,20);
         mensaje.setHorizontalAlignment(JLabel.CENTER);
-        mensaje.setFont(CustomVista.appleFont());
+        mensaje.setFont(Utilidades.quickSandFont());
         mensaje.setForeground(Color.WHITE);
 
         JLabel icono = new JLabel();
-        icono.setIcon(CustomVista.establecerIcono("logo", 25, 75));
+        icono.setIcon(Utilidades.establecerIcono("logo", 25, 75));
         icono.setBounds(10, 20, 25, 75);
 
         BeautyTextField txtCorreo = new BeautyTextField("Correo", 140, 40, 200, 20);

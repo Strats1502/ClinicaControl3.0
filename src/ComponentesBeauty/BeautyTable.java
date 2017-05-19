@@ -1,8 +1,8 @@
 package ComponentesBeauty;
 
 import Conexion.ObtenerDatosTablaSQL;
-import InterfazUsuario.Home;
-import Vistas.CustomVista;
+import Utilidades.Utilidades;
+import Utilidades.Utilidades;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -90,7 +90,7 @@ public class BeautyTable extends JTable {
 
         JScrollPane scroll = new JScrollPane(tabla);
         scroll.setBounds(50,70,700,390);
-        scroll.setFont(Home.appleFont());
+        scroll.setFont(Utilidades.quickSandFont());
         scroll.setOpaque(true);
         scroll.setBorder(null);
         scroll.setBackground(new Color(0,0,0,0));
@@ -122,7 +122,7 @@ public class BeautyTable extends JTable {
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setLocationRelativeTo(null);
         f.add(getBeautyTable("Producto"));
-        f.add(CustomVista.fondo());
+        f.add(Utilidades.fondo());
         f.setVisible(true);
         f.addMouseListener(new MouseAdapter() {
             @Override
