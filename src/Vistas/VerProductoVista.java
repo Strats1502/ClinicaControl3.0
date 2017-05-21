@@ -2,6 +2,7 @@ package Vistas;
 
 import ComponentesBeauty.*;
 import Conexion.ActualizarSQL;
+import Conexion.ConexionSQL;
 import Conexion.InsertarSQL;
 
 import javax.imageio.ImageIO;
@@ -13,15 +14,17 @@ import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import Utilidades.Utilidades;
 
 import static Utilidades.Utilidades.establecerIcono;
-import static Utilidades.Utilidades.fondo;
 
 /**
  * Created by esva on 21/05/17.
  */
-public class NuevoProductoVista extends JPanel {
+public class VerProductoVista extends JPanel {
     //Componentes
     BeautyTextField txtBuscar;
     BeautyImageButton btnNuevo;
@@ -43,8 +46,9 @@ public class NuevoProductoVista extends JPanel {
     FileFilter imageFilter = new FileNameExtensionFilter("Image files", ImageIO.getReaderFileSuffixes());
 
     //Lista de busqueda
-    //public static DefaultListModel dlmBuscador = new DefaultListModel();
-    //public static BeautyList listaBuscador = new BeautyList(dlmBuscador, 300, 150, 300, 140);
+    public static DefaultListModel dlmBuscador = new DefaultListModel();
+    public static BeautyList listaBuscador = new BeautyList();
+    public static BeautyScrollPane scrollBuscador = new BeautyScrollPane(listaBuscador, dlmBuscador,750, 60, 150, 730);
 
     //ListaComboPresentacion
     public static DefaultListModel dlmPresentacion = new DefaultListModel();
@@ -66,8 +70,7 @@ public class NuevoProductoVista extends JPanel {
     int id = 0;
     int idUsuario = 0;
 
-    public NuevoProductoVista(int idUsuario) {
-        this.idUsuario = idUsuario;
+    public VerProductoVista() {
         componentes();
         this.setLayout(null);
         this.setBounds(0, 0, 750, 625);
@@ -84,7 +87,7 @@ public class NuevoProductoVista extends JPanel {
         txtPrecio = new BeautyTextField("Precio", 400, 470, 200, 20);
         checkActivo = new BeautyCheckbox("Activo", 60, 550, 200);
         btnGuardar = new BeautyBlackButton("Guardar", 620, 550, 100, 30);
-        txtBuscar = new BeautyTextField("Buscar...", 300, 120, 300, 30);
+        txtBuscar = new BeautyTextField("Buscar...",  600, 0, 150, 30);
         btnNuevo = new BeautyImageButton(establecerIcono("Nuevo", 20, 20), 620, 130, 20, 20);
         btnEditar = new BeautyImageButton(establecerIcono("Editar", 20, 20), 660, 130, 20, 20);
         btnLlegadaMercancia = new BeautyImageButton(establecerIcono("LlegadaMercancia", 20, 20), 700, 130, 20, 20);
@@ -95,16 +98,23 @@ public class NuevoProductoVista extends JPanel {
         dlmPresentacion.addElement("Botella");
 
         //Implementar funciones a componentes
-        btnImagenProducto.addActionListener(new NuevoProductoVista.CambiarImagen());
-        //txtBuscar.addKeyListener(new Buscador());
-        //txtBuscar.addFocusListener(new BuscadorFocus());
-        comboBoxPresentacion.addFocusListener(new PresentacionFocus());
-        //listaBuscador.addMouseListener(new ListaBuscadorElemento());
-        listaPresentacion.addMouseListener(new ListaPresentacionElemento());
-        btnEditar.addActionListener(new BotonEditar());
-        btnNuevo.addActionListener(new BotonNuevo());
-       // btnLlegadaMercancia.addActionListener(new BotonLlegadaMercancia());
-        btnGuardar.addActionListener(new BotonGuardar());
+        //btnImagenProducto.addActionListener(new VerProductoVista.CambiarImagen());
+        txtBuscar.addKeyListener(new Buscador());
+        txtBuscar.addFocusListener(new BuscadorFocus());
+        comboBoxPresentacion.addFocusListener(new VerProductoVista.PresentacionFocus());
+        listaBuscador.addMouseListener(new VerProductoVista.ListaBuscadorElemento());
+        listaPresentacion.addMouseListener(new VerProductoVista.ListaPresentacionElemento());
+        btnEditar.addActionListener(new VerProductoVista.BotonEditar());
+        btnNuevo.addActionListener(new VerProductoVista.BotonNuevo());
+         //btnLlegadaMercancia.addActionListener(new VerProductoVista.BotonLlegadaMercancia());
+        btnGuardar.addActionListener(new VerProductoVista.BotonGuardar());
+
+        txtNombre.setEnabled(false);
+        txtProovedor.setEnabled(false);
+        txtCosto.setEnabled(false);
+        txtPrecio.setEnabled(false);
+        checkActivo.setEnabled(false);
+        comboBoxPresentacion.setEnabled(false);
 
         //Añadir componentes al panel
         this.add(btnImagenProducto);
@@ -114,8 +124,8 @@ public class NuevoProductoVista extends JPanel {
         this.add(txtCosto);
         this.add(txtPrecio);
         this.add(checkActivo);
-        this.add(btnGuardar);
-        //this.add(txtBuscar);
+        //this.add(btnGuardar);
+        this.add(txtBuscar);
         //this.add(listaBuscador);
         //this.add(btnNuevo);
         //this.add(btnEditar);
@@ -141,7 +151,7 @@ public class NuevoProductoVista extends JPanel {
         }
     }
 
-    /*
+
     private class Buscador extends KeyAdapter {
         @Override
         public void keyTyped(KeyEvent e) {
@@ -149,20 +159,19 @@ public class NuevoProductoVista extends JPanel {
             String cadena = txtBuscar.getText() + tecla;
             buscarProducto(cadena);
         }
-    }*/
+    }
 
-    /*
     private class BuscadorFocus extends FocusAdapter {
         @Override
         public void focusGained(FocusEvent e) {
-            listaBuscador.setVisible(true);
+            scrollBuscador.setVisible(true);
         }
 
         @Override
         public void focusLost(FocusEvent e) {
-            listaBuscador.setVisible(false);
+            scrollBuscador.setVisible(false);
         }
-    }*/
+    }
 
     private class PresentacionFocus extends FocusAdapter {
         @Override
@@ -176,7 +185,7 @@ public class NuevoProductoVista extends JPanel {
         }
     }
 
-    /*
+
     private class ListaBuscadorElemento extends MouseAdapter {
         @Override
         public void mouseClicked(MouseEvent e) {
@@ -184,14 +193,14 @@ public class NuevoProductoVista extends JPanel {
             try {
                 opcionBusqueda = listaBuscador.getSelectedValue().toString();
                 establecerDatos(opcionBusqueda);
-                listaBuscador.setVisible(false);
+                scrollBuscador.setVisible(false);
                 txtBuscar.setText("");
                 btnGuardar.setEnabled(false);
             } catch (NullPointerException nullException) {
 
             }
         }
-    }*/
+    }
 
     private class ListaPresentacionElemento extends MouseAdapter {
         @Override
@@ -314,7 +323,7 @@ public class NuevoProductoVista extends JPanel {
         return false;
     }
 
-    /*
+
 
     private void buscarProducto(String cadena) {
         dlmBuscador.removeAllElements();
@@ -339,9 +348,7 @@ public class NuevoProductoVista extends JPanel {
         } catch (SQLException sqlException) {
 
         }
-    }*/
-
-    /*
+    }
 
     private void establecerDatos(String opcionBusqueda) {
         String sql = "SELECT * FROM Producto WHERE nombre = ?";
@@ -361,7 +368,7 @@ public class NuevoProductoVista extends JPanel {
                 boolean activo = rs.getBoolean("activo");
 
                 //Le pone los datos a los componentes de la opcion seleccionada
-                btnImagenProducto.setIcon(establecerImagenPath(pathFoto));
+                btnImagenProducto.setIcon(Utilidades.establecerImagenPath(pathFoto, 200, 200));
                 comboBoxPresentacion.setText(presentacion);
                 txtNombre.setText(nombre);
                 txtProovedor.setText(proveedor);
@@ -370,7 +377,7 @@ public class NuevoProductoVista extends JPanel {
                 checkActivo.setSelected(activo);
 
                 //Evita que se editen los datos
-                btnImagenProducto.setEnabled(false);
+                //btnImagenProducto.setEnabled(false);
                 comboBoxPresentacion.setEnabled(false);
                 txtNombre.setEnabled(false);
                 txtProovedor.setEnabled(false);
@@ -382,7 +389,7 @@ public class NuevoProductoVista extends JPanel {
         } catch (SQLException sqlException) {
             System.out.println(sqlException.getMessage());
         }
-    }*/
+    }
 
 
     public static void main(String[] args) {
@@ -393,8 +400,9 @@ public class NuevoProductoVista extends JPanel {
         f.add(errorTipo);
         f.add(errorNombre);
         f.add(errorProveedor);
+        f.add(scrollBuscador);
         f.add(scrollPresentacion);
-        f.add(new NuevoProductoVista(2));
+        f.add(new VerProductoVista());
         f.setDefaultCloseOperation(3);
         f.setUndecorated(true);
         f.setSize(750, 625);
@@ -402,6 +410,5 @@ public class NuevoProductoVista extends JPanel {
         f.setVisible(true);
         f.setLocationRelativeTo(null);
     }
-
 
 }

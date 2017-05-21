@@ -2,7 +2,9 @@ package Vistas;
 
 import ComponentesBeauty.*;
 import Conexion.ActualizarSQL;
+import Conexion.ConexionSQL;
 import Conexion.InsertarSQL;
+import Utilidades.Utilidades;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -13,15 +15,16 @@ import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import static Utilidades.Utilidades.establecerIcono;
-import static Utilidades.Utilidades.fondo;
 
 /**
  * Created by esva on 21/05/17.
  */
-public class NuevoProductoVista extends JPanel {
+public class EditarProductoVista extends JPanel {
     //Componentes
     BeautyTextField txtBuscar;
     BeautyImageButton btnNuevo;
@@ -43,8 +46,9 @@ public class NuevoProductoVista extends JPanel {
     FileFilter imageFilter = new FileNameExtensionFilter("Image files", ImageIO.getReaderFileSuffixes());
 
     //Lista de busqueda
-    //public static DefaultListModel dlmBuscador = new DefaultListModel();
-    //public static BeautyList listaBuscador = new BeautyList(dlmBuscador, 300, 150, 300, 140);
+    public static DefaultListModel dlmBuscador = new DefaultListModel();
+    public static BeautyList listaBuscador = new BeautyList();
+    public static BeautyScrollPane scrollBuscador = new BeautyScrollPane(listaBuscador, dlmBuscador,750, 60, 150, 730);
 
     //ListaComboPresentacion
     public static DefaultListModel dlmPresentacion = new DefaultListModel();
@@ -57,16 +61,16 @@ public class NuevoProductoVista extends JPanel {
     public static BeautyErrorMessage errorTipo = new BeautyErrorMessage("Selecciona un tipo de presentación...");
     public static BeautyErrorMessage errorNombre = new BeautyErrorMessage("Ingresa un nombre de producto...");
     public static BeautyErrorMessage errorProveedor = new BeautyErrorMessage("Ingresa un proveedor...");
-    public static BeautyErrorMessage pantallaOK = new BeautyErrorMessage("Producto registrado exitosamente");
+    public static BeautyErrorMessage pantallaOK = new BeautyErrorMessage("Producto editado exitosamente");
 
     //Variables necesarias
     String opcionBusqueda = null;
     String pathFoto = null;
-    boolean editando = false;
+    boolean editando = true;
     int id = 0;
     int idUsuario = 0;
 
-    public NuevoProductoVista(int idUsuario) {
+    public EditarProductoVista(int idUsuario) {
         this.idUsuario = idUsuario;
         componentes();
         this.setLayout(null);
@@ -84,7 +88,7 @@ public class NuevoProductoVista extends JPanel {
         txtPrecio = new BeautyTextField("Precio", 400, 470, 200, 20);
         checkActivo = new BeautyCheckbox("Activo", 60, 550, 200);
         btnGuardar = new BeautyBlackButton("Guardar", 620, 550, 100, 30);
-        txtBuscar = new BeautyTextField("Buscar...", 300, 120, 300, 30);
+        txtBuscar = new BeautyTextField("Buscar...",  600, 0, 150, 30);
         btnNuevo = new BeautyImageButton(establecerIcono("Nuevo", 20, 20), 620, 130, 20, 20);
         btnEditar = new BeautyImageButton(establecerIcono("Editar", 20, 20), 660, 130, 20, 20);
         btnLlegadaMercancia = new BeautyImageButton(establecerIcono("LlegadaMercancia", 20, 20), 700, 130, 20, 20);
@@ -95,16 +99,24 @@ public class NuevoProductoVista extends JPanel {
         dlmPresentacion.addElement("Botella");
 
         //Implementar funciones a componentes
-        btnImagenProducto.addActionListener(new NuevoProductoVista.CambiarImagen());
-        //txtBuscar.addKeyListener(new Buscador());
-        //txtBuscar.addFocusListener(new BuscadorFocus());
-        comboBoxPresentacion.addFocusListener(new PresentacionFocus());
-        //listaBuscador.addMouseListener(new ListaBuscadorElemento());
-        listaPresentacion.addMouseListener(new ListaPresentacionElemento());
-        btnEditar.addActionListener(new BotonEditar());
-        btnNuevo.addActionListener(new BotonNuevo());
-       // btnLlegadaMercancia.addActionListener(new BotonLlegadaMercancia());
-        btnGuardar.addActionListener(new BotonGuardar());
+        btnImagenProducto.addActionListener(new EditarProductoVista.CambiarImagen());
+        txtBuscar.addKeyListener(new EditarProductoVista.Buscador());
+        txtBuscar.addFocusListener(new EditarProductoVista.BuscadorFocus());
+        comboBoxPresentacion.addFocusListener(new EditarProductoVista.PresentacionFocus());
+        listaBuscador.addMouseListener(new EditarProductoVista.ListaBuscadorElemento());
+        listaPresentacion.addMouseListener(new EditarProductoVista.ListaPresentacionElemento());
+        btnEditar.addActionListener(new EditarProductoVista.BotonEditar());
+        btnNuevo.addActionListener(new EditarProductoVista.BotonNuevo());
+        //btnLlegadaMercancia.addActionListener(new VerProductoVista.BotonLlegadaMercancia());
+        btnGuardar.addActionListener(new EditarProductoVista.BotonGuardar());
+
+        btnImagenProducto.setEnabled(false);
+        txtNombre.setEnabled(false);
+        txtProovedor.setEnabled(false);
+        txtCosto.setEnabled(false);
+        txtPrecio.setEnabled(false);
+        checkActivo.setEnabled(false);
+        comboBoxPresentacion.setEnabled(false);
 
         //Añadir componentes al panel
         this.add(btnImagenProducto);
@@ -115,7 +127,7 @@ public class NuevoProductoVista extends JPanel {
         this.add(txtPrecio);
         this.add(checkActivo);
         this.add(btnGuardar);
-        //this.add(txtBuscar);
+        this.add(txtBuscar);
         //this.add(listaBuscador);
         //this.add(btnNuevo);
         //this.add(btnEditar);
@@ -141,7 +153,7 @@ public class NuevoProductoVista extends JPanel {
         }
     }
 
-    /*
+
     private class Buscador extends KeyAdapter {
         @Override
         public void keyTyped(KeyEvent e) {
@@ -149,20 +161,19 @@ public class NuevoProductoVista extends JPanel {
             String cadena = txtBuscar.getText() + tecla;
             buscarProducto(cadena);
         }
-    }*/
+    }
 
-    /*
     private class BuscadorFocus extends FocusAdapter {
         @Override
         public void focusGained(FocusEvent e) {
-            listaBuscador.setVisible(true);
+            scrollBuscador.setVisible(true);
         }
 
         @Override
         public void focusLost(FocusEvent e) {
-            listaBuscador.setVisible(false);
+            scrollBuscador.setVisible(false);
         }
-    }*/
+    }
 
     private class PresentacionFocus extends FocusAdapter {
         @Override
@@ -176,22 +187,21 @@ public class NuevoProductoVista extends JPanel {
         }
     }
 
-    /*
+
     private class ListaBuscadorElemento extends MouseAdapter {
         @Override
         public void mouseClicked(MouseEvent e) {
-            editando = false;
             try {
                 opcionBusqueda = listaBuscador.getSelectedValue().toString();
                 establecerDatos(opcionBusqueda);
-                listaBuscador.setVisible(false);
+                scrollBuscador.setVisible(false);
                 txtBuscar.setText("");
-                btnGuardar.setEnabled(false);
+                btnGuardar.setEnabled(true);
             } catch (NullPointerException nullException) {
 
             }
         }
-    }*/
+    }
 
     private class ListaPresentacionElemento extends MouseAdapter {
         @Override
@@ -221,8 +231,10 @@ public class NuevoProductoVista extends JPanel {
                 }
 
                 if (datosCompletos(presentacion, nombre, proveedor)) {
-                    if (!editando) {
-                        InsertarSQL.insertarProducto(idUsuario, nombre, proveedor, costo, precio, presentacion, activo, pathFoto);
+                    if (editando) {
+                        System.err.println("ok");
+                        ActualizarSQL.actualizarProducto(nombre, presentacion, proveedor, costo, precio, pathFoto, activo);
+                        InsertarSQL.insertarModificacion(id, idUsuario, "Producto");
                         comboBoxPresentacion.setText("Presentación");
                         txtNombre.setHint("Nombre");
                         txtProovedor.setHint("Proveedor");
@@ -230,22 +242,12 @@ public class NuevoProductoVista extends JPanel {
                         txtPrecio.setHint("Precio");
                         checkActivo.setSelected(false);
                         btnImagenProducto.setIcon(establecerIcono("Producto", 200, 200));
-                        pantallaOK.setVisible(true);
                     } else {
-                        ActualizarSQL.actualizarProducto(nombre, presentacion, proveedor, costo, precio, pathFoto, activo);
-                        InsertarSQL.insertarModificacion(id, 1, "Producto");
-                        comboBoxPresentacion.setText("Presentación");
-                        txtNombre.setHint("Nombre");
-                        txtProovedor.setHint("Proveedor");
-                        txtCosto.setHint("Costo");
-                        txtPrecio.setHint("Precio");
-                        checkActivo.setSelected(false);
-                        btnImagenProducto.setIcon(establecerIcono("Producto", 150, 150));
+                        System.err.println("asdfasdf");
                     }
 
                 }
                 opcionBusqueda = null;
-                editando = false;
             } catch (NumberFormatException errorFormateo) {
                 errorFormato.setVisible(true);
             }
@@ -314,7 +316,7 @@ public class NuevoProductoVista extends JPanel {
         return false;
     }
 
-    /*
+
 
     private void buscarProducto(String cadena) {
         dlmBuscador.removeAllElements();
@@ -339,9 +341,7 @@ public class NuevoProductoVista extends JPanel {
         } catch (SQLException sqlException) {
 
         }
-    }*/
-
-    /*
+    }
 
     private void establecerDatos(String opcionBusqueda) {
         String sql = "SELECT * FROM Producto WHERE nombre = ?";
@@ -361,7 +361,7 @@ public class NuevoProductoVista extends JPanel {
                 boolean activo = rs.getBoolean("activo");
 
                 //Le pone los datos a los componentes de la opcion seleccionada
-                btnImagenProducto.setIcon(establecerImagenPath(pathFoto));
+                btnImagenProducto.setIcon(Utilidades.establecerImagenPath(pathFoto, 200, 200));
                 comboBoxPresentacion.setText(presentacion);
                 txtNombre.setText(nombre);
                 txtProovedor.setText(proveedor);
@@ -370,19 +370,19 @@ public class NuevoProductoVista extends JPanel {
                 checkActivo.setSelected(activo);
 
                 //Evita que se editen los datos
-                btnImagenProducto.setEnabled(false);
+                btnImagenProducto.setEnabled(true);
                 comboBoxPresentacion.setEnabled(false);
                 txtNombre.setEnabled(false);
-                txtProovedor.setEnabled(false);
-                txtCosto.setEnabled(false);
-                txtPrecio.setEnabled(false);
-                checkActivo.setEnabled(false);
+                txtProovedor.setEnabled(true);
+                txtCosto.setEnabled(true);
+                txtPrecio.setEnabled(true);
+                checkActivo.setEnabled(true);
 
             }
         } catch (SQLException sqlException) {
             System.out.println(sqlException.getMessage());
         }
-    }*/
+    }
 
 
     public static void main(String[] args) {
@@ -393,8 +393,9 @@ public class NuevoProductoVista extends JPanel {
         f.add(errorTipo);
         f.add(errorNombre);
         f.add(errorProveedor);
+        f.add(scrollBuscador);
         f.add(scrollPresentacion);
-        f.add(new NuevoProductoVista(2));
+        f.add(new EditarProductoVista(1));
         f.setDefaultCloseOperation(3);
         f.setUndecorated(true);
         f.setSize(750, 625);
@@ -402,6 +403,5 @@ public class NuevoProductoVista extends JPanel {
         f.setVisible(true);
         f.setLocationRelativeTo(null);
     }
-
 
 }

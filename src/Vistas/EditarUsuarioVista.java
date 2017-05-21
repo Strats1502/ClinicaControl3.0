@@ -68,7 +68,7 @@ public class EditarUsuarioVista extends JPanel {
     public static BeautyErrorMessage errorNoIguales = new BeautyErrorMessage("Las contraseñas no son iguales...");
     public static BeautyErrorMessage errorEditar = new BeautyErrorMessage("No has seleccionado un registro para editar...");
     public static BeautyErrorMessage errorCorreoRepetido = new BeautyErrorMessage("Ya existe un usuario con ese correo");
-    public static BeautyErrorMessage pantallaOK = new BeautyErrorMessage("Usuario registrado exitosamente");
+    public static BeautyErrorMessage pantallaOK = new BeautyErrorMessage("Usuario editado exitosamente");
 
     //Variables
     private static final String PATTERN_EMAIL = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";

@@ -3,10 +3,7 @@ package Frames;
 import ComponentesBeauty.BeautyImageButton;
 import Conexion.ConexionSQL;
 import Utilidades.Utilidades;
-import Vistas.EditarUsuarioVista;
-import Vistas.HomeVista;
-import Vistas.NuevoUsuarioVista;
-import Vistas.VerUsuarioVista;
+import Vistas.*;
 import oracle.jrockit.jfr.JFR;
 
 import javax.swing.*;
@@ -96,7 +93,13 @@ public class PrincipalFrame extends JFrame {
     private NuevoUsuarioVista nuevoUsuarioVista;
     private VerUsuarioVista verUsuarioVista;
     private EditarUsuarioVista editarUsuarioVista;
-
+    private NuevoProductoVista nuevoProductoVista;
+    private VerProductoVista verProductoVista;
+    private EditarProductoVista editarProductoVista;
+    private NuevoPacienteVista nuevoPacienteVista;
+    private VerPacienteVista verPacienteVista;
+    private EditarPacienteVista editarPacienteVista;
+    private NuevoAntecedenteVista nuevoAntecedenteVista;
 
     public PrincipalFrame(String correo) {
         this.correo = correo;
@@ -106,6 +109,13 @@ public class PrincipalFrame extends JFrame {
         nuevoUsuarioVista = new NuevoUsuarioVista(this.id);
         verUsuarioVista = new VerUsuarioVista();
         editarUsuarioVista = new EditarUsuarioVista(this.id);
+        nuevoProductoVista = new NuevoProductoVista(this.id);
+        verProductoVista = new VerProductoVista();
+        editarProductoVista = new EditarProductoVista(this.id);
+        nuevoPacienteVista = new NuevoPacienteVista(this.id);
+        verPacienteVista = new VerPacienteVista();
+        editarPacienteVista = new EditarPacienteVista(this.id);
+        nuevoAntecedenteVista = new NuevoAntecedenteVista(this.id);
 
         mensajesError();
         listas();
@@ -135,12 +145,73 @@ public class PrincipalFrame extends JFrame {
         this.add(nuevoUsuarioVista.errorContraseña1);
         this.add(nuevoUsuarioVista.errorNoIguales);
         this.add(nuevoUsuarioVista.pantallaOK);
+        //Vista editar usuario
+        this.add(editarUsuarioVista.errorRol);
+        this.add(editarUsuarioVista.errorNombre);
+        this.add(editarUsuarioVista.errorApellidoPaterno);
+        this.add(editarUsuarioVista.errorApellidoMaterno);
+        this.add(editarUsuarioVista.errorCorreo);
+        this.add(editarUsuarioVista.errorContraseña1);
+        this.add(editarUsuarioVista.errorContraseña2);
+        this.add(editarUsuarioVista.errorNoIguales);
+        this.add(editarUsuarioVista.pantallaOK);
+        //Vista nuevo producto
+        this.add(nuevoProductoVista.errorFormato);
+        this.add(nuevoProductoVista.errorNombre);
+        this.add(nuevoProductoVista.errorProveedor);
+        this.add(nuevoProductoVista.errorTipo);
+        this.add(nuevoProductoVista.pantallaOK);
+        //Vista editar producto
+        this.add(editarProductoVista.errorFormato);
+        this.add(editarProductoVista.errorNombre);
+        this.add(editarProductoVista.errorProveedor);
+        this.add(editarProductoVista.errorTipo);
+        this.add(editarProductoVista.pantallaOK);
+        //Vista nuevo paciente
+        this.add(nuevoPacienteVista.errorNombre);
+        this.add(nuevoPacienteVista.errorApellidoPaterno);
+        this.add(nuevoPacienteVista.errorApellidoMaterno);
+        this.add(nuevoPacienteVista.errorFechaNacimiento);
+        this.add(nuevoPacienteVista.errorReligion);
+        this.add(nuevoPacienteVista.errorCorreo);
+        this.add(nuevoPacienteVista.errorNoEsCorreo);
+        this.add(nuevoPacienteVista.errorCorreoRepetido);
+        this.add(nuevoPacienteVista.errorFormato);
+        this.add(nuevoPacienteVista.pantallaOK);
+        //Vista editar paciente
+        this.add(editarPacienteVista.errorNombre);
+        this.add(editarPacienteVista.errorApellidoPaterno);
+        this.add(editarPacienteVista.errorApellidoMaterno);
+        this.add(editarPacienteVista.errorFechaNacimiento);
+        this.add(editarPacienteVista.errorReligion);
+        this.add(editarPacienteVista.errorCorreo);
+        this.add(editarPacienteVista.errorNoEsCorreo);
+        this.add(editarPacienteVista.errorCorreoRepetido);
+        this.add(editarPacienteVista.errorFormato);
+        this.add(editarPacienteVista.pantallaOK);
+        //Vista antecedente
+        this.add(nuevoAntecedenteVista.errorTipo);
+        this.add(nuevoAntecedenteVista.errorEnfermedad1);
+        this.add(nuevoAntecedenteVista.errorEnfermedad2);
+        this.add(nuevoAntecedenteVista.errorAño);
+        this.add(nuevoAntecedenteVista.errorDescripcion);
+        this.add(nuevoAntecedenteVista.errorTratamiento);
     }
 
     private void listas() {
         this.add(nuevoUsuarioVista.scrollRol);
         this.add(verUsuarioVista.scrollBuscador);
+        this.add(editarUsuarioVista.scrollRol);
         this.add(editarUsuarioVista.scrollBuscador);
+        this.add(nuevoProductoVista.scrollPresentacion);
+        this.add(verProductoVista.scrollBuscador);
+        this.add(editarProductoVista.scrollPresentacion);
+        this.add(editarProductoVista.scrollBuscador);
+        this.add(verPacienteVista.scrollBuscador);
+        this.add(editarPacienteVista.scrollBuscador);
+        this.add(nuevoAntecedenteVista.scrollBuscador);
+        this.add(nuevoAntecedenteVista.scrollTipo);
+        this.add(nuevoAntecedenteVista.scrollEnfermedad);
     }
 
     private void componentes() {
@@ -393,6 +464,55 @@ public class PrincipalFrame extends JFrame {
         botonUsuarioEditar.addActionListener((ActionEvent) -> {
             panelCentral.removeAll();
             panelCentral.add(editarUsuarioVista);
+            panelCentral.repaint();
+            panelCentral.revalidate();
+        });
+
+        botonProductoNuevo.addActionListener((ActionEvent) -> {
+            panelCentral.removeAll();
+            panelCentral.add(nuevoProductoVista);
+            panelCentral.repaint();
+            panelCentral.revalidate();
+        });
+
+        botonProductoVer.addActionListener((ActionEvent) -> {
+            panelCentral.removeAll();
+            panelCentral.add(verProductoVista);
+            panelCentral.repaint();
+            panelCentral.revalidate();
+        });
+
+        botonProductoEditar.addActionListener((ActionEvent) -> {
+            panelCentral.removeAll();
+            panelCentral.add(editarProductoVista);
+            panelCentral.repaint();
+            panelCentral.revalidate();
+        });
+
+        botonPacienteNuevo.addActionListener((ActionEvent) -> {
+            panelCentral.removeAll();
+            panelCentral.add(nuevoPacienteVista);
+            panelCentral.repaint();
+            panelCentral.revalidate();
+        });
+
+        botonPacienteVer.addActionListener((ActionEvent) -> {
+            panelCentral.removeAll();
+            panelCentral.add(verPacienteVista);
+            panelCentral.repaint();
+            panelCentral.revalidate();
+        });
+
+        botonPacienteEditar.addActionListener((ActionEvent) -> {
+            panelCentral.removeAll();
+            panelCentral.add(editarPacienteVista);
+            panelCentral.repaint();
+            panelCentral.revalidate();
+        });
+
+        botonPacienteAntecedente.addActionListener((ActionEvent) -> {
+            panelCentral.removeAll();
+            panelCentral.add(nuevoAntecedenteVista);
             panelCentral.repaint();
             panelCentral.revalidate();
         });

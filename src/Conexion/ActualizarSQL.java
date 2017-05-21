@@ -46,16 +46,28 @@ public class ActualizarSQL {
 
     public static void actualizarProducto(String nombre, String presentacion, String proveedor, double costo, double precio, String pathFoto, boolean activo) {
         String sql = "UPDATE Producto SET proveedor = ?, costo = ?, precio = ?, path_foto = ?, activo = ? WHERE nombre = ? and presentacion = ?";
+        String sql2 = "UPDATE Producto SET proveedor = ?, costo = ?, precio = ?, activo = ? WHERE nombre = ? and presentacion = ?";
         try {
-            PreparedStatement ps = ConexionSQL.getConexion().prepareStatement(sql);
-            ps.setString(1, proveedor);
-            ps.setDouble(2, costo);
-            ps.setDouble(3, precio);
-            ps.setString(4, pathFoto);
-            ps.setBoolean(5, activo);
-            ps.setString(6, nombre);
-            ps.setString(7, presentacion);
-            ps.executeUpdate();
+            if (!pathFoto.equals("src/Iconos/icn_Producto.png")) {
+                PreparedStatement ps = ConexionSQL.getConexion().prepareStatement(sql);
+                ps.setString(1, proveedor);
+                ps.setDouble(2, costo);
+                ps.setDouble(3, precio);
+                ps.setString(4, pathFoto);
+                ps.setBoolean(5, activo);
+                ps.setString(6, nombre);
+                ps.setString(7, presentacion);
+                ps.executeUpdate();
+            } else {
+                PreparedStatement ps2 = ConexionSQL.getConexion().prepareStatement(sql2);
+                ps2.setString(1, proveedor);
+                ps2.setDouble(2, costo);
+                ps2.setDouble(3, precio);
+                ps2.setBoolean(4, activo);
+                ps2.setString(5, nombre);
+                ps2.setString(6, presentacion);
+                ps2.executeUpdate();
+            }
         } catch (SQLIntegrityConstraintViolationException sqlConstraint) {
             System.out.println(sqlConstraint.getMessage());
         } catch (SQLException sqlException) {
