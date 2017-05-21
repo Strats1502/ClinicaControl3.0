@@ -1,6 +1,6 @@
 package ComponentesBeauty;
 
-import Vistas.CustomVista;
+import Utilidades.Utilidades;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,15 +14,15 @@ public class BeautyErrorMessage extends JPanel {
         this.setVisible(false);
         this.setLayout(null);
         this.setBackground(new Color(0,0,0, 198));
-        this.setBounds(160, 180, 450, 130);
+        this.setBounds(220, 250, 450, 130);
 
         JLabel icono = new JLabel();
-        icono.setIcon(CustomVista.establecerIcono("logo", 25, 75));
+        icono.setIcon(Utilidades.establecerIcono("logo", 25, 75));
         icono.setBounds(10, 20, 25, 75);
 
         JLabel msg = new JLabel("Error: " + mensaje);
         msg.setForeground(Color.WHITE);
-        msg.setFont(CustomVista.appleFont());
+        msg.setFont(Utilidades.quickSandFont());
         msg.setHorizontalAlignment(JLabel.CENTER);
         msg.setBounds(50, 40, 350, 30);
 

@@ -32,18 +32,18 @@ public class Utilidades {
         return i;
     }
 
-    public static Icon establecerImagenPath(String archivo) {
+    public static Icon establecerImagenPath(String archivo, int ancho, int alto) {
         ImageIcon imagen = new ImageIcon(archivo);
-        Icon i = new ImageIcon(imagen.getImage().getScaledInstance(150,150, Image.SCALE_DEFAULT));
+        Icon i = new ImageIcon(imagen.getImage().getScaledInstance(ancho, alto, Image.SCALE_DEFAULT));
         return i;
     }
 
     public static Font quickSandFont() {
         try {
-            Font appleFont = Font.createFont(Font.TRUETYPE_FONT,
+            Font quickSandFont = Font.createFont(Font.TRUETYPE_FONT,
                     new FileInputStream(new File("src/Fuentes/Quicksand.otf"))).
-                    deriveFont(Font.PLAIN, 16);
-            return appleFont;
+                    deriveFont(Font.PLAIN, 12);
+            return quickSandFont;
         } catch (FontFormatException e) {
             e.printStackTrace();
         } catch (IOException e) {

@@ -16,8 +16,8 @@ public class BeautyCheckbox extends JCheckBox {
         this.setBounds(x,y,ancho,20);
         this.setBackground(new Color(0,0,0,0));
         this.setText(texto);
-        this.setFont(appleFont());
-        this.setForeground(Color.WHITE);
+        this.setFont(quickSandFont());
+        this.setForeground(new Color(51, 53, 68));
         this.setOpaque(true);
         this.setContentAreaFilled(false);
         this.setPressedIcon(establecerIcono("CheckBox",ancho,20));
@@ -36,11 +36,11 @@ public class BeautyCheckbox extends JCheckBox {
         return i;
     }
 
-    private Font appleFont() {
+    private Font quickSandFont() {
         try {
-            Font appleFont = Font.createFont(Font.TRUETYPE_FONT,
-                             new FileInputStream(new File("src/Fuentes/MYRIADAT.TTF"))).deriveFont(Font.PLAIN,14);
-            return appleFont;
+            Font quickSandFont = Font.createFont(Font.TRUETYPE_FONT,
+                             new FileInputStream(new File("src/Fuentes/Quicksand.otf"))).deriveFont(Font.PLAIN,14);
+            return quickSandFont;
         } catch (Exception e) {
             System.out.println("No se encontro la fuente de la tipografía");
         }

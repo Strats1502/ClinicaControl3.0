@@ -18,10 +18,10 @@ public class BeautyComboBox extends JButton{
         this.setSize(ancho, alto);
         this.setContentAreaFilled(false);
         this.setBorder(null);
-        this.setForeground(Color.WHITE);
+        this.setForeground(new Color(51, 53, 68));
         this.setOpaque(false);
         this.setBounds(x, y, ancho, alto);
-        this.setFont(appleFont());
+        this.setFont(quickSandFont());
     }
 
     public Icon establecerIcono(String archivo,int ancho, int alto) {
@@ -35,12 +35,12 @@ public class BeautyComboBox extends JButton{
      * @return Fuente de Apple
      */
 
-    public Font appleFont() {
+    public Font quickSandFont() {
         try {
-            Font appleFont = Font.createFont(Font.TRUETYPE_FONT,
-                    new FileInputStream(new File("src/Fuentes/MYRIADAT.TTF"))).
+            Font quickSandFont = Font.createFont(Font.TRUETYPE_FONT,
+                    new FileInputStream(new File("src/Fuentes/Quicksand.otf"))).
                     deriveFont(Font.PLAIN, 14);
-            return appleFont;
+            return quickSandFont;
         } catch (FontFormatException e) {
             e.printStackTrace();
         } catch (IOException e) {

@@ -19,12 +19,12 @@ public class BeautyBlackButton extends JButton {
         this.setForeground(Color.WHITE);
         this.setOpaque(false);
         this.setBounds(x, y, ancho, alto);
-        this.setFont(appleFont());
+        this.setFont(quickSandFont());
     }
 
     @Override
     protected void paintComponent(Graphics g) {
-        g.setColor(Color.BLACK);
+        g.setColor(new Color(51, 53, 68));
         g.fillRoundRect(0, 0, this.getWidth(), this.getHeight(), 10, 10);
         super.paintComponent(g);
     }
@@ -34,12 +34,12 @@ public class BeautyBlackButton extends JButton {
      * @return Fuente de Apple
      */
 
-    public Font appleFont() {
+    public Font quickSandFont() {
         try {
-            Font appleFont = Font.createFont(Font.TRUETYPE_FONT,
-                    new FileInputStream(new File("src/Fuentes/MYRIADAT.TTF"))).
+            Font quickSandFont = Font.createFont(Font.TRUETYPE_FONT,
+                    new FileInputStream(new File("src/Fuentes/Quicksand.otf"))).
                     deriveFont(Font.PLAIN, 16);
-            return appleFont;
+            return quickSandFont;
         } catch (FontFormatException e) {
             e.printStackTrace();
         } catch (IOException e) {

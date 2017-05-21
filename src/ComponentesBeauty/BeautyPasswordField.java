@@ -24,8 +24,8 @@ public class BeautyPasswordField extends JPasswordField implements FocusListener
         setBorder(null);
         setEchoChar((char) 0);
         this.setHorizontalAlignment(JPasswordField.CENTER);
-        this.setFont(appleFont());
-        this.setForeground(Color.WHITE);
+        this.setFont(quickSandFont());
+        this.setForeground(new Color(51, 53, 68));
         this.setBounds(x, y, ancho, alto);
         this.setHint(hint);
     }
@@ -62,19 +62,19 @@ public class BeautyPasswordField extends JPasswordField implements FocusListener
 
     @Override
     public void paintComponent(Graphics g) {
-        g.setColor(getBackground());
+        g.setColor(new Color(51, 53, 68));
         g.fillRoundRect(0, getHeight() - 1, getWidth(), 1, 5, 5);
 
         super.paintComponent(g);
 
     }
 
-    public Font appleFont() {
+    public Font quickSandFont() {
         try {
-            Font appleFont = Font.createFont(Font.TRUETYPE_FONT,
-                    new FileInputStream(new File("src/Fuentes/MYRIADAT.TTF"))).
+            Font quickSandFont = Font.createFont(Font.TRUETYPE_FONT,
+                    new FileInputStream(new File("src/Fuentes/Quicksand.otf"))).
                     deriveFont(Font.PLAIN, 16);
-            return appleFont;
+            return quickSandFont;
         } catch (FontFormatException e) {
             e.printStackTrace();
         } catch (IOException e) {

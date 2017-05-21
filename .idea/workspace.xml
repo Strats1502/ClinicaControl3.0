@@ -1,7 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df25c030-b008-4f68-b32f-85376dc5a714" name="Default" comment="" />
+    <list default="true" id="df25c030-b008-4f68-b32f-85376dc5a714" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyBlackButton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyButton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyCheckbox.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyCircleButton$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyCircleButton$CircleBorder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyCircleButton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyComboBox.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyComboBoxOptions.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyErrorMessage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyFrame.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyImageButton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyInputRoot.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyList.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyPasswordField.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyTable$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyTable$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyTable$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyTable$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyTable$5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyTable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/ComponentesBeauty/BeautyTextField.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Conexion/ActualizarSQL.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Conexion/ComprobarSQL.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Conexion/ConexionSQL.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Conexion/EliminarSQL.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Conexion/InsertarSQL.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Conexion/ObtenerDatosTablaSQL.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Frames/PrincipalFrame.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Fuentes/Quicksand.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_Accept_CheckBox.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_Antecedentes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_Calendario.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_Cerrar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_Cerrar_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_CheckBox.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_CheckBox_Checked.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_ComboBox.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_Editar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_Factura.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_FotoPerfil.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_LlegadaMercancia.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_Menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_Minimizar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_Minimizar_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_Nuevo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_Null.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_Producto.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_Recomendacion.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Iconos/icn_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/BataDoctor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/CerrarSesionIcono.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/Corazon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/Fondo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/PacienteIcono.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/ProductoIcono.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/UsuarioIcono.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/VentaIcono.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/cerrar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/colorGris.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/fondoGeneral.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/fondoTitulo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/fotoCircular.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/juanjoseesva@gmail.com.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/maximizar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/minimizar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/pruebaImagen.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/pruebaImagen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Imagenes/regresar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Utilidades/Utilidades.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Iconos/icn_Cerrar_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Iconos/icn_Minimizar_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Iconos/icn_Null.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyScrollPane.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Conexion/ActualizarSQL.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Conexion/ComprobarSQL.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Conexion/ConexionSQL.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Conexion/EliminarSQL.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Conexion/InsertarSQL.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Conexion/ObtenerDatosTablaSQL.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Vistas/EditarUsuarioVista.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Vistas/HomeVista.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Vistas/NuevoUsuarioVista.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Vistas/VerUsuarioVista.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Fuentes/Quicksand.otf" afterPath="$PROJECT_DIR$/src/Fuentes/Quicksand.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Iconos/icn_Antecedentes.png" afterPath="$PROJECT_DIR$/src/Iconos/icn_Antecedentes.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Iconos/icn_Cerrar.png" afterPath="$PROJECT_DIR$/src/Iconos/icn_Cerrar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Iconos/icn_ComboBox.png" afterPath="$PROJECT_DIR$/src/Iconos/icn_ComboBox.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Iconos/icn_FotoPerfil.png" afterPath="$PROJECT_DIR$/src/Iconos/icn_FotoPerfil.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Iconos/icn_Minimizar.png" afterPath="$PROJECT_DIR$/src/Iconos/icn_Minimizar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Iconos/icn_Recomendacion.png" afterPath="$PROJECT_DIR$/src/Iconos/icn_Recomendacion.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Version 3.0.iml" afterPath="$PROJECT_DIR$/Version 3.0.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyBlackButton.java" afterPath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyBlackButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyButton.java" afterPath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyCheckbox.java" afterPath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyCheckbox.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyComboBox.java" afterPath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyComboBox.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyErrorMessage.java" afterPath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyErrorMessage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyImageButton.java" afterPath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyImageButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyInputRoot.java" afterPath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyInputRoot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyList.java" afterPath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyPasswordField.java" afterPath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyPasswordField.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyTable.java" afterPath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyTable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyTextField.java" afterPath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyTextField.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frames/PrincipalFrame.java" afterPath="$PROJECT_DIR$/src/Frames/PrincipalFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utilidades/Utilidades.java" afterPath="$PROJECT_DIR$/src/Utilidades/Utilidades.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,44 +127,141 @@
       <file leaf-file-name="PrincipalFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Frames/PrincipalFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+            <state relative-caret-position="150">
+              <caret line="388" column="38" lean-forward="true" selection-start-line="388" selection-start-column="38" selection-end-line="388" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginFrame.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Frames/LoginFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="103" column="20" lean-forward="false" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditarUsuarioVista.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Vistas/EditarUsuarioVista.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="432" column="36" lean-forward="false" selection-start-line="432" selection-start-column="36" selection-end-line="432" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="class#BotonRol#0;class#EditarUsuarioVista#0" expanded="false" />
+                <element signature="e#12645#12646#0" expanded="true" />
+                <element signature="e#12695#12696#0" expanded="true" />
+                <element signature="e#12760#12761#0" expanded="true" />
+                <element signature="e#12811#12812#0" expanded="true" />
+                <element signature="class#BuscarKeyAdapter#0;class#EditarUsuarioVista#0" expanded="false" />
+                <element signature="class#ListaRolMouseAdapter#0;class#EditarUsuarioVista#0" expanded="false" />
+                <element signature="method#escogioRol#0;class#EditarUsuarioVista#0" expanded="false" />
+                <element signature="method#esCorreo#0;class#EditarUsuarioVista#0" expanded="false" />
+                <element signature="method#contraseñasIguales#0;class#EditarUsuarioVista#0" expanded="false" />
+                <element signature="method#datosPersonalesCompletos#0;class#EditarUsuarioVista#0" expanded="false" />
+                <element signature="method#datosContactoCompletos#0;class#EditarUsuarioVista#0" expanded="false" />
+                <element signature="method#buscarUsuario#0;class#EditarUsuarioVista#0" expanded="false" />
+                <element signature="method#establecerDatos#0;class#EditarUsuarioVista#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeautyList.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyList.java">
+      <file leaf-file-name="ActualizarSQL.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Conexion/ActualizarSQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            <state relative-caret-position="-126">
+              <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VerUsuarioVista.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Vistas/VerUsuarioVista.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="50" column="102" lean-forward="false" selection-start-line="50" selection-start-column="102" selection-end-line="50" selection-end-column="119" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#13219#13220#0" expanded="true" />
+                <element signature="e#13269#13270#0" expanded="true" />
+                <element signature="e#13334#13335#0" expanded="true" />
+                <element signature="e#13385#13386#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utilidades.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Utilidades/Utilidades.java">
+      <file leaf-file-name="BeautyTextField.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyTextField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="43" column="75" lean-forward="false" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
+            <state relative-caret-position="308">
+              <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BeautyBlackButton.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyBlackButton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeautyImageButton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyImageButton.java">
+      <file leaf-file-name="NuevoUsuarioVista.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Vistas/NuevoUsuarioVista.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+            <state relative-caret-position="224">
+              <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="528" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#CambiarImagen#0;class#NuevoUsuarioVista#0" expanded="false" />
+                <element signature="class#BotonEditar#0;class#NuevoUsuarioVista#0" expanded="false" />
+                <element signature="class#BotonNuevo#0;class#NuevoUsuarioVista#0" expanded="false" />
+                <element signature="class#BotonRol#0;class#NuevoUsuarioVista#0" expanded="false" />
+                <element signature="class#BuscarKeyAdapter#0;class#NuevoUsuarioVista#0" expanded="false" />
+                <element signature="class#BuscarFocusAdapter#0;class#NuevoUsuarioVista#0" expanded="false" />
+                <element signature="class#ListaBuscarMouseAdapter#0;class#NuevoUsuarioVista#0" expanded="false" />
+                <element signature="class#ListaRolMouseAdapter#0;class#NuevoUsuarioVista#0" expanded="false" />
+                <element signature="method#escogioRol#0;class#NuevoUsuarioVista#0" expanded="false" />
+                <element signature="method#esCorreo#0;class#NuevoUsuarioVista#0" expanded="false" />
+                <element signature="method#contraseñasIguales#0;class#NuevoUsuarioVista#0" expanded="false" />
+                <element signature="method#datosPersonalesCompletos#0;class#NuevoUsuarioVista#0" expanded="false" />
+                <element signature="method#datosContactoCompletos#0;class#NuevoUsuarioVista#0" expanded="false" />
+                <element signature="method#correoRepetido#0;class#NuevoUsuarioVista#0" expanded="false" />
+                <element signature="method#datosCompletos#0;class#NuevoUsuarioVista#0" expanded="false" />
+                <element signature="method#buscarUsuario#0;class#NuevoUsuarioVista#0" expanded="false" />
+                <element signature="method#establecerDatos#0;class#NuevoUsuarioVista#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertarSQL.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Conexion/InsertarSQL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConexionSQL.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Conexion/ConexionSQL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -68,6 +276,22 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>CustomVista</find>
+      <find>a</find>
+      <find>appl</find>
+      <find>apple</find>
+      <find>appleF</find>
+      <find>appleFo</find>
+      <find>appleFont</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>Utilidades</replace>
+      <replace>quickSandFont</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -79,13 +303,37 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/ComponentesBeauty/BeautyButton.java" />
+        <option value="$PROJECT_DIR$/src/ComponentesBeauty/BeautyInputRoot.java" />
+        <option value="$PROJECT_DIR$/src/ComponentesBeauty/BeautyTable.java" />
         <option value="$PROJECT_DIR$/src/ComponentesBeauty/BeautyImageButton.java" />
-        <option value="$PROJECT_DIR$/src/Frames/PrincipalFrame.java" />
+        <option value="$PROJECT_DIR$/src/ComponentesBeauty/BeautyPasswordField.java" />
+        <option value="$PROJECT_DIR$/src/ComponentesBeauty/BeautyBlackButton.java" />
+        <option value="$PROJECT_DIR$/src/ComponentesBeauty/BeautyErrorMessage.java" />
         <option value="$PROJECT_DIR$/src/Utilidades/Utilidades.java" />
+        <option value="$PROJECT_DIR$/src/Conexion/ComprobarSQL.java" />
+        <option value="$PROJECT_DIR$/src/Frames/LoginFrame.java" />
+        <option value="$PROJECT_DIR$/src/Vistas/Home.java" />
+        <option value="$PROJECT_DIR$/src/Vistas/HomeVista.java" />
+        <option value="$PROJECT_DIR$/src/ComponentesBeauty/BeautyScrollPane.java" />
         <option value="$PROJECT_DIR$/src/ComponentesBeauty/BeautyList.java" />
+        <option value="$PROJECT_DIR$/src/ComponentesBeauty/BeautyCheckbox.java" />
+        <option value="$PROJECT_DIR$/src/ComponentesBeauty/BeautyComboBox.java" />
+        <option value="$PROJECT_DIR$/src/ComponentesBeauty/BeautyTextField.java" />
+        <option value="$PROJECT_DIR$/src/Vistas/NuevoUsuarioVista.java" />
+        <option value="$PROJECT_DIR$/src/Vistas/VerUsuarioVista.java" />
+        <option value="$PROJECT_DIR$/src/Frames/PrincipalFrame.java" />
+        <option value="$PROJECT_DIR$/src/Vistas/EditarUsuarioVista.java" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="-1" />
     <option name="width" value="1366" />
@@ -107,6 +355,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -115,7 +364,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Version 3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Version 3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Version 3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Version 3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Vistas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -147,23 +424,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Fuentes" />
+              <option name="myItemId" value="Frames" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Version 3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Version 3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conexion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Version 3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Version 3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ComponentesBeauty" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -177,7 +491,107 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.LoginFrame">
+    <configuration default="false" name="PrincipalFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Frames.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Frames.PrincipalFrame" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Version 3.0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="LoginFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Frames.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Frames.LoginFrame" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Version 3.0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="NuevoUsuarioVista" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Vistas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Vistas.NuevoUsuarioVista" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Version 3.0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="VerUsuarioVista" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Vistas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Vistas.VerUsuarioVista" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Version 3.0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="EditarUsuarioVista" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Vistas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Vistas.EditarUsuarioVista" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Version 3.0" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -382,6 +796,22 @@
       <listeners />
       <method />
     </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.PrincipalFrame" />
+      <item index="1" class="java.lang.String" itemvalue="Application.LoginFrame" />
+      <item index="2" class="java.lang.String" itemvalue="Application.NuevoUsuarioVista" />
+      <item index="3" class="java.lang.String" itemvalue="Application.VerUsuarioVista" />
+      <item index="4" class="java.lang.String" itemvalue="Application.EditarUsuarioVista" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.LoginFrame" />
+        <item index="1" class="java.lang.String" itemvalue="Application.EditarUsuarioVista" />
+        <item index="2" class="java.lang.String" itemvalue="Application.VerUsuarioVista" />
+        <item index="3" class="java.lang.String" itemvalue="Application.NuevoUsuarioVista" />
+        <item index="4" class="java.lang.String" itemvalue="Application.PrincipalFrame" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -396,56 +826,225 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1495117279966</updated>
+      <workItem from="1495149011160" duration="5920000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5920000" />
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1366" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25755286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27870092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39872408" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Frames/PrincipalFrame.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1834">
+          <caret line="138" column="39" lean-forward="false" selection-start-line="138" selection-start-column="39" selection-end-line="138" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyBlackButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Conexion/ComprobarSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyPasswordField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyTextField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="21" column="48" lean-forward="false" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyImageButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="35" column="47" lean-forward="false" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utilidades/Utilidades.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="44" column="45" lean-forward="false" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frames/LoginFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="46" column="34" lean-forward="false" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frames/PrincipalFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utilidades/Utilidades.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="44" column="45" lean-forward="false" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frames/PrincipalFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utilidades/Utilidades.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="44" column="45" lean-forward="false" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frames/PrincipalFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utilidades/Utilidades.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="43" column="75" lean-forward="false" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyImageButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frames/PrincipalFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
           <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -453,9 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="43" column="75" lean-forward="false" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -463,7 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -472,7 +1067,7 @@
         <state relative-caret-position="280">
           <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -481,9 +1076,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
           <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -491,9 +1084,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="43" column="75" lean-forward="false" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -501,7 +1091,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -510,48 +1099,321 @@
         <state relative-caret-position="294">
           <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyInputRoot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyImageButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="434">
+          <caret line="35" column="47" lean-forward="false" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frames/PrincipalFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyErrorMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="38">
+          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Utilidades/Utilidades.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="43" column="75" lean-forward="false" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
+        <state relative-caret-position="178">
+          <caret line="36" column="78" lean-forward="false" selection-start-line="36" selection-start-column="78" selection-end-line="36" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyPasswordField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Conexion/ComprobarSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="58" column="47" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vistas.java" />
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyScrollPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vistas/HomeVista.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyComboBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="20" column="47" lean-forward="false" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyCheckbox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state relative-caret-position="126">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyBlackButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Conexion/InsertarSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Conexion/ConexionSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vistas/NuevoUsuarioVista.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="528" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#CambiarImagen#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="class#BotonEditar#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="class#BotonNuevo#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="class#BotonRol#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="class#BuscarKeyAdapter#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="class#BuscarFocusAdapter#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="class#ListaBuscarMouseAdapter#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="class#ListaRolMouseAdapter#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#escogioRol#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#esCorreo#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#contraseñasIguales#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#datosPersonalesCompletos#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#datosContactoCompletos#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#correoRepetido#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#datosCompletos#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#buscarUsuario#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#establecerDatos#0;class#NuevoUsuarioVista#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyTextField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vistas/VerUsuarioVista.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="50" column="102" lean-forward="false" selection-start-line="50" selection-start-column="102" selection-end-line="50" selection-end-column="119" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#13219#13220#0" expanded="true" />
+            <element signature="e#13269#13270#0" expanded="true" />
+            <element signature="e#13334#13335#0" expanded="true" />
+            <element signature="e#13385#13386#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Conexion/ActualizarSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vistas/EditarUsuarioVista.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="432" column="36" lean-forward="false" selection-start-line="432" selection-start-column="36" selection-end-line="432" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#BotonRol#0;class#EditarUsuarioVista#0" expanded="false" />
+            <element signature="e#12645#12646#0" expanded="true" />
+            <element signature="e#12695#12696#0" expanded="true" />
+            <element signature="e#12760#12761#0" expanded="true" />
+            <element signature="e#12811#12812#0" expanded="true" />
+            <element signature="class#BuscarKeyAdapter#0;class#EditarUsuarioVista#0" expanded="false" />
+            <element signature="class#ListaRolMouseAdapter#0;class#EditarUsuarioVista#0" expanded="false" />
+            <element signature="method#escogioRol#0;class#EditarUsuarioVista#0" expanded="false" />
+            <element signature="method#esCorreo#0;class#EditarUsuarioVista#0" expanded="false" />
+            <element signature="method#contraseñasIguales#0;class#EditarUsuarioVista#0" expanded="false" />
+            <element signature="method#datosPersonalesCompletos#0;class#EditarUsuarioVista#0" expanded="false" />
+            <element signature="method#datosContactoCompletos#0;class#EditarUsuarioVista#0" expanded="false" />
+            <element signature="method#buscarUsuario#0;class#EditarUsuarioVista#0" expanded="false" />
+            <element signature="method#establecerDatos#0;class#EditarUsuarioVista#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frames/PrincipalFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="388" column="38" lean-forward="true" selection-start-line="388" selection-start-column="38" selection-end-line="388" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frames/LoginFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="103" column="20" lean-forward="false" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Version 3.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>mysql-connector-java-5.1.41-bin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

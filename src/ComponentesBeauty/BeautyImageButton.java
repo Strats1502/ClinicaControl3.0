@@ -6,8 +6,11 @@ package ComponentesBeauty;
 *Tamaño personalizado
  */
 
+import Utilidades.Utilidades;
+
 import javax.swing.Icon;
 import javax.swing.JButton;
+import java.awt.*;
 
 /**
  *
@@ -21,6 +24,16 @@ public class BeautyImageButton extends JButton{
         this.setIcon(icono);
         this.setBorder(null);
         this.setBounds(x, y, ancho, alto);
+    }
+
+    public BeautyImageButton(Icon icono, int x, int y, int ancho, int alto, String texto) {
+        this.setText(texto);
+        this.setContentAreaFilled(false);
+        this.setIcon(icono);
+        this.setBorder(null);
+        this.setBounds(x, y, ancho, alto);
+        this.setForeground(Color.WHITE);
+        this.setFont(Utilidades.quickSandFont());
     }
 
     //Constructor vacío

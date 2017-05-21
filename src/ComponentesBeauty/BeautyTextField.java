@@ -14,8 +14,8 @@ public class BeautyTextField extends JTextField implements FocusListener {
     public BeautyTextField(String hint, int x, int y, int ancho, int alto) {
         addFocusListener(this);
         this.setBounds(x, y, ancho, alto);
-        this.setFont(appleFont());
-        this.setForeground(Color.WHITE);
+        this.setFont(quickSandFont());
+        this.setForeground(new Color(51, 53, 68));
         this.setHint(hint);
         setOpaque(false);
         setBorder(null);
@@ -51,17 +51,17 @@ public class BeautyTextField extends JTextField implements FocusListener {
 
     @Override
     public void paintComponent(Graphics g) {
-        g.setColor(getBackground());
+        g.setColor(new Color(51, 53, 68));
         g.fillRoundRect(0, this.getHeight() - 1, getWidth(), 1, 5, 5);
         super.paintComponent(g);
     }
 
-    public Font appleFont() {
+    public Font quickSandFont() {
         try {
-            Font appleFont = Font.createFont(Font.TRUETYPE_FONT,
-                                            new FileInputStream(new File("src/Fuentes/MYRIADAT.TTF"))).
+            Font quickSandFont = Font.createFont(Font.TRUETYPE_FONT,
+                                            new FileInputStream(new File("src/Fuentes/Quicksand.otf"))).
                                             deriveFont(Font.PLAIN, 16);
-            return appleFont;
+            return quickSandFont;
         } catch (FontFormatException e) {
             e.printStackTrace();
         } catch (IOException e) {
