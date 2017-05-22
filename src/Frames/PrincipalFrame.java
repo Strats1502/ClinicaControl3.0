@@ -104,6 +104,9 @@ public class PrincipalFrame extends JFrame {
     private NuevoVenta nuevoVenta;
     private NuevoVentaProducto nuevoVentaProducto;
     private NuevoVentaServicio nuevoVentaServicio;
+    private ImprimirVista imprimirVista;
+    private LlegadaMercanciaVista llegadaMercanciaVista;
+    private BaseDeDatosVista baseDeDatosVista;
 
     public PrincipalFrame(String correo) {
         this.correo = correo;
@@ -124,6 +127,9 @@ public class PrincipalFrame extends JFrame {
         nuevoVenta = new NuevoVenta(this.id);
         nuevoVentaProducto = new NuevoVentaProducto();
         nuevoVentaServicio = new NuevoVentaServicio();
+        llegadaMercanciaVista = new LlegadaMercanciaVista();
+        baseDeDatosVista = new BaseDeDatosVista();
+        imprimirVista = new ImprimirVista();
 
         mensajesError();
         listas();
@@ -215,6 +221,11 @@ public class PrincipalFrame extends JFrame {
         //Vista nueva venta producto
         this.add(nuevoVentaProducto.errorProducto);
         this.add(nuevoVentaProducto.errorPresentacion);
+        //Vista imprimir
+        this.add(imprimirVista.pantallaOK);
+        //Llegada de mercancia
+        this.add(llegadaMercanciaVista.errorFormato);
+        this.add(llegadaMercanciaVista.errorOpcion);
     }
 
     private void listas() {
@@ -241,6 +252,9 @@ public class PrincipalFrame extends JFrame {
         this.add(nuevoVentaProducto.scrollPresentacion);
         this.add(nuevoVentaServicio.scrollBuscador);
         this.add(nuevoVentaServicio.scrollMedico);
+        this.add(imprimirVista.scrollBuscador);
+        this.add(llegadaMercanciaVista.scrollBuscador);
+        this.add(baseDeDatosVista.scrollTablas);
     }
 
     private void componentes() {
@@ -570,6 +584,27 @@ public class PrincipalFrame extends JFrame {
         botonVentaServicio.addActionListener((ActionEvent) -> {
             panelCentral.removeAll();
             panelCentral.add(nuevoVentaServicio);
+            panelCentral.repaint();
+            panelCentral.revalidate();
+        });
+
+        botonVentaImprimir.addActionListener((ActionEvent) -> {
+            panelCentral.removeAll();
+            panelCentral.add(imprimirVista);
+            panelCentral.repaint();
+            panelCentral.revalidate();
+        });
+
+        botonLlegadaMercancia.addActionListener((ActionEvent) -> {
+            panelCentral.removeAll();
+            panelCentral.add(llegadaMercanciaVista);
+            panelCentral.repaint();
+            panelCentral.revalidate();
+        });
+
+        botonBaseDeDatos.addActionListener((ActionEvent) -> {
+            panelCentral.removeAll();
+            panelCentral.add(baseDeDatosVista);
             panelCentral.repaint();
             panelCentral.revalidate();
         });
