@@ -100,6 +100,10 @@ public class PrincipalFrame extends JFrame {
     private VerPacienteVista verPacienteVista;
     private EditarPacienteVista editarPacienteVista;
     private NuevoAntecedenteVista nuevoAntecedenteVista;
+    private NuevoRecomendacionVista nuevoRecomendacionVista;
+    private NuevoVenta nuevoVenta;
+    private NuevoVentaProducto nuevoVentaProducto;
+    private NuevoVentaServicio nuevoVentaServicio;
 
     public PrincipalFrame(String correo) {
         this.correo = correo;
@@ -116,6 +120,10 @@ public class PrincipalFrame extends JFrame {
         verPacienteVista = new VerPacienteVista();
         editarPacienteVista = new EditarPacienteVista(this.id);
         nuevoAntecedenteVista = new NuevoAntecedenteVista(this.id);
+        nuevoRecomendacionVista = new NuevoRecomendacionVista();
+        nuevoVenta = new NuevoVenta(this.id);
+        nuevoVentaProducto = new NuevoVentaProducto();
+        nuevoVentaServicio = new NuevoVentaServicio();
 
         mensajesError();
         listas();
@@ -196,6 +204,17 @@ public class PrincipalFrame extends JFrame {
         this.add(nuevoAntecedenteVista.errorAño);
         this.add(nuevoAntecedenteVista.errorDescripcion);
         this.add(nuevoAntecedenteVista.errorTratamiento);
+        //Vista recomendacion
+        this.add(nuevoRecomendacionVista.errorMedico);
+        this.add(nuevoRecomendacionVista.errorRecomendacion);
+        //Vista nueva venta
+        this.add(nuevoVenta.errorDatosLocalizacion);
+        this.add(nuevoVenta.errorTipoPago);
+        this.add(nuevoVenta.errorTipoPaciente);
+        this.add(nuevoVenta.errorDatosUsuario);
+        //Vista nueva venta producto
+        this.add(nuevoVentaProducto.errorProducto);
+        this.add(nuevoVentaProducto.errorPresentacion);
     }
 
     private void listas() {
@@ -212,6 +231,16 @@ public class PrincipalFrame extends JFrame {
         this.add(nuevoAntecedenteVista.scrollBuscador);
         this.add(nuevoAntecedenteVista.scrollTipo);
         this.add(nuevoAntecedenteVista.scrollEnfermedad);
+        this.add(nuevoRecomendacionVista.scrollBuscador);
+        this.add(nuevoRecomendacionVista.scrollDoctor);
+        this.add(nuevoVenta.scrollFormaPago);
+        this.add(nuevoVenta.scrollTipoCliente);
+        this.add(nuevoVenta.scrollPaciente);
+        this.add(nuevoVentaProducto.scrollBuscador);
+        this.add(nuevoVentaProducto.scrollProducto);
+        this.add(nuevoVentaProducto.scrollPresentacion);
+        this.add(nuevoVentaServicio.scrollBuscador);
+        this.add(nuevoVentaServicio.scrollMedico);
     }
 
     private void componentes() {
@@ -513,6 +542,34 @@ public class PrincipalFrame extends JFrame {
         botonPacienteAntecedente.addActionListener((ActionEvent) -> {
             panelCentral.removeAll();
             panelCentral.add(nuevoAntecedenteVista);
+            panelCentral.repaint();
+            panelCentral.revalidate();
+        });
+
+        botonPacienteRecomendacion.addActionListener((ActionEvent) -> {
+            panelCentral.removeAll();
+            panelCentral.add(nuevoRecomendacionVista);
+            panelCentral.repaint();
+            panelCentral.revalidate();
+        });
+
+        botonVentaNuevo.addActionListener((ActionEvent) -> {
+            panelCentral.removeAll();
+            panelCentral.add(nuevoVenta);
+            panelCentral.repaint();
+            panelCentral.revalidate();
+        });
+
+        botonVentaProducto.addActionListener((ActionEvent) -> {
+            panelCentral.removeAll();
+            panelCentral.add(nuevoVentaProducto);
+            panelCentral.repaint();
+            panelCentral.revalidate();
+        });
+
+        botonVentaServicio.addActionListener((ActionEvent) -> {
+            panelCentral.removeAll();
+            panelCentral.add(nuevoVentaServicio);
             panelCentral.repaint();
             panelCentral.revalidate();
         });

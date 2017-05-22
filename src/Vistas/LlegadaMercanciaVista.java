@@ -5,6 +5,5 @@ import javax.swing.*;
 /**
  * Created by esva on 21/05/17.
  */
-public class NuevoServicioVista extends JPanel {
-
+public class LlegadaMercanciaVista extends JPanel {
 }

@@ -312,6 +312,7 @@ public class NuevoAntecedenteVista extends JPanel {
                 txtFechaInicio.setEnabled(false);
                 txtEnfermedad.setEnabled(false);
                 txtTratamiento.setEnabled(false);
+                btnGuardar.setEnabled(false);
             }
             opcionBusqueda = null;
         }

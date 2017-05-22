@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df25c030-b008-4f68-b32f-85376dc5a714" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jcalendar_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ComponentesBeauty/BeautyDateChooser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Vistas/EditarPacienteVista.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Vistas/EditarProductoVista.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Vistas/NuevoPacienteVista.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Vistas/VerPacienteVista.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Vistas/VerProductoVista.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Version 3.0/Conexion/ActualizarSQL.class" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Conexion/ActualizarSQL.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Vistas/NuevoRecomendacionVista.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Vistas/NuevoVenta.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Vistas/NuevoVentaServicio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Version 3.0/Conexion/InsertarSQL.class" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Conexion/InsertarSQL.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Version 3.0/Frames/PrincipalFrame$BotonCerrarSesion.class" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Frames/PrincipalFrame$BotonCerrarSesion.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Version 3.0/Frames/PrincipalFrame.class" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Frames/PrincipalFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Version 3.0/Vistas/EditarUsuarioVista.class" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Vistas/EditarUsuarioVista.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Version 3.0/Vistas/NuevoAntecedenteVista$BotonGuardar.class" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Vistas/NuevoAntecedenteVista$BotonGuardar.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Version 3.0/Vistas/NuevoAntecedenteVista.class" afterPath="$PROJECT_DIR$/out/production/Version 3.0/Vistas/NuevoAntecedenteVista.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Version 3.0.iml" afterPath="$PROJECT_DIR$/Version 3.0.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Conexion/ActualizarSQL.java" afterPath="$PROJECT_DIR$/src/Conexion/ActualizarSQL.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Conexion/InsertarSQL.java" afterPath="$PROJECT_DIR$/src/Conexion/InsertarSQL.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frames/PrincipalFrame.java" afterPath="$PROJECT_DIR$/src/Frames/PrincipalFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Vistas/EditarUsuarioVista.java" afterPath="$PROJECT_DIR$/src/Vistas/EditarUsuarioVista.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Vistas/NuevoProductoVista.java" afterPath="$PROJECT_DIR$/src/Vistas/NuevoProductoVista.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Vistas/NuevoAntecedenteVista.java" afterPath="$PROJECT_DIR$/src/Vistas/NuevoAntecedenteVista.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Vistas/NuevoServicioVista.java" afterPath="$PROJECT_DIR$/src/Vistas/NuevoServicioVista.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,54 +27,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PrincipalFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PrincipalFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Frames/PrincipalFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="514" column="50" lean-forward="false" selection-start-line="514" selection-start-column="50" selection-end-line="514" selection-end-column="50" />
+            <state relative-caret-position="14">
+              <caret line="559" column="33" lean-forward="false" selection-start-line="559" selection-start-column="33" selection-end-line="559" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NuevoPacienteVista.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Vistas/NuevoPacienteVista.java">
+      <file leaf-file-name="NuevoServicioVista.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Vistas/NuevoServicioVista.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="99" column="10" lean-forward="false" selection-start-line="99" selection-start-column="10" selection-end-line="99" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#datosPersonalesCompletos#0;class#NuevoPacienteVista#0" expanded="false" />
-                <element signature="method#datosContactoCompletos#0;class#NuevoPacienteVista#0" expanded="false" />
-                <element signature="method#correoRepetido#0;class#NuevoPacienteVista#0" expanded="false" />
-                <element signature="method#datosCompletos#0;class#NuevoPacienteVista#0" expanded="false" />
-                <element signature="method#buscarPaciente#0;class#NuevoPacienteVista#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="98">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VerPacienteVista.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Vistas/VerPacienteVista.java">
+      <file leaf-file-name="NuevoVentaProducto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Vistas/NuevoVentaProducto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="490" column="5" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="490" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#13040#13041#0" expanded="true" />
-                <element signature="e#13095#13096#0" expanded="true" />
-                <element signature="e#13160#13161#0" expanded="true" />
-                <element signature="e#13216#13217#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NuevoAntecedenteVista.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Vistas/NuevoAntecedenteVista.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="53" column="114" lean-forward="false" selection-start-line="53" selection-start-column="114" selection-end-line="53" selection-end-column="114" />
+            <state relative-caret-position="-854">
+              <caret line="205" column="39" lean-forward="true" selection-start-line="205" selection-start-column="39" selection-end-line="205" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,16 +59,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditarPacienteVista.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Vistas/EditarPacienteVista.java">
+      <file leaf-file-name="NuevoVentaServicio.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Vistas/NuevoVentaServicio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="106" column="54" lean-forward="false" selection-start-line="106" selection-start-column="54" selection-end-line="106" selection-end-column="71" />
+            <state relative-caret-position="3199">
+              <caret line="267" column="9" lean-forward="true" selection-start-line="267" selection-start-column="9" selection-end-line="267" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#correoRepetido#0;class#EditarPacienteVista#0" expanded="false" />
-                <element signature="method#buscarPaciente#0;class#EditarPacienteVista#0" expanded="false" />
-                <element signature="method#establecerDatos#0;class#EditarPacienteVista#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -165,8 +135,14 @@
         <option value="$PROJECT_DIR$/src/Vistas/NuevoPacienteVista.java" />
         <option value="$PROJECT_DIR$/src/Vistas/VerPacienteVista.java" />
         <option value="$PROJECT_DIR$/src/Vistas/EditarPacienteVista.java" />
-        <option value="$PROJECT_DIR$/src/Frames/PrincipalFrame.java" />
         <option value="$PROJECT_DIR$/src/Vistas/NuevoAntecedenteVista.java" />
+        <option value="$PROJECT_DIR$/src/Vistas/NuevoServicioVista.java" />
+        <option value="$PROJECT_DIR$/src/Vistas/NuevoRecomendacionVista.java" />
+        <option value="$PROJECT_DIR$/src/Conexion/InsertarSQL.java" />
+        <option value="$PROJECT_DIR$/src/Vistas/NuevoVenta.java" />
+        <option value="$PROJECT_DIR$/src/Vistas/NuevoVentaProducto.java" />
+        <option value="$PROJECT_DIR$/src/Vistas/NuevoVentaServicio.java" />
+        <option value="$PROJECT_DIR$/src/Frames/PrincipalFrame.java" />
       </list>
     </option>
   </component>
@@ -271,6 +247,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Version 3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Version 3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conexion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -319,14 +313,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="NuevoPacienteVista" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="NuevoVenta" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="Vistas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Vistas.NuevoPacienteVista" />
+      <option name="MAIN_CLASS_NAME" value="Vistas.NuevoVenta" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -339,14 +333,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="VerPacienteVista" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="InsertarSQL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Vistas.*" />
+          <option name="PATTERN" value="Conexion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Vistas.VerPacienteVista" />
+      <option name="MAIN_CLASS_NAME" value="Conexion.InsertarSQL" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -359,14 +353,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="EditarPacienteVista" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="NuevoVentaProducto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="Vistas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Vistas.EditarPacienteVista" />
+      <option name="MAIN_CLASS_NAME" value="Vistas.NuevoVentaProducto" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -379,14 +373,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="NuevoAntecedenteVista" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="NuevoVentaServicio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="Vistas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Vistas.NuevoAntecedenteVista" />
+      <option name="MAIN_CLASS_NAME" value="Vistas.NuevoVentaServicio" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -605,18 +599,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.LoginFrame" />
-      <item index="1" class="java.lang.String" itemvalue="Application.NuevoPacienteVista" />
-      <item index="2" class="java.lang.String" itemvalue="Application.VerPacienteVista" />
-      <item index="3" class="java.lang.String" itemvalue="Application.EditarPacienteVista" />
-      <item index="4" class="java.lang.String" itemvalue="Application.NuevoAntecedenteVista" />
+      <item index="1" class="java.lang.String" itemvalue="Application.NuevoVenta" />
+      <item index="2" class="java.lang.String" itemvalue="Application.InsertarSQL" />
+      <item index="3" class="java.lang.String" itemvalue="Application.NuevoVentaProducto" />
+      <item index="4" class="java.lang.String" itemvalue="Application.NuevoVentaServicio" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.LoginFrame" />
-        <item index="1" class="java.lang.String" itemvalue="Application.NuevoAntecedenteVista" />
-        <item index="2" class="java.lang.String" itemvalue="Application.EditarPacienteVista" />
-        <item index="3" class="java.lang.String" itemvalue="Application.VerPacienteVista" />
-        <item index="4" class="java.lang.String" itemvalue="Application.NuevoPacienteVista" />
+        <item index="1" class="java.lang.String" itemvalue="Application.NuevoVentaServicio" />
+        <item index="2" class="java.lang.String" itemvalue="Application.NuevoVentaProducto" />
+        <item index="3" class="java.lang.String" itemvalue="Application.NuevoVenta" />
+        <item index="4" class="java.lang.String" itemvalue="Application.InsertarSQL" />
       </list>
     </recent_temporary>
   </component>
@@ -647,13 +641,13 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32376397" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37480065" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2200957" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32695374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -692,47 +686,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Frames/LoginFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="46" column="34" lean-forward="false" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frames/PrincipalFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utilidades/Utilidades.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="44" column="45" lean-forward="false" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frames/PrincipalFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -952,14 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Conexion/InsertarSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Conexion/ConexionSQL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
@@ -1038,32 +983,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vistas/NuevoUsuarioVista.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="403" column="4" lean-forward="false" selection-start-line="403" selection-start-column="4" selection-end-line="420" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#CambiarImagen#0;class#NuevoUsuarioVista#0" expanded="false" />
-            <element signature="class#BotonEditar#0;class#NuevoUsuarioVista#0" expanded="false" />
-            <element signature="class#BotonNuevo#0;class#NuevoUsuarioVista#0" expanded="false" />
-            <element signature="class#BotonRol#0;class#NuevoUsuarioVista#0" expanded="false" />
-            <element signature="class#BuscarKeyAdapter#0;class#NuevoUsuarioVista#0" expanded="false" />
-            <element signature="class#BuscarFocusAdapter#0;class#NuevoUsuarioVista#0" expanded="false" />
-            <element signature="class#ListaBuscarMouseAdapter#0;class#NuevoUsuarioVista#0" expanded="false" />
-            <element signature="class#ListaRolMouseAdapter#0;class#NuevoUsuarioVista#0" expanded="false" />
-            <element signature="method#escogioRol#0;class#NuevoUsuarioVista#0" expanded="false" />
-            <element signature="method#esCorreo#0;class#NuevoUsuarioVista#0" expanded="false" />
-            <element signature="method#contraseñasIguales#0;class#NuevoUsuarioVista#0" expanded="false" />
-            <element signature="method#datosPersonalesCompletos#0;class#NuevoUsuarioVista#0" expanded="false" />
-            <element signature="method#datosContactoCompletos#0;class#NuevoUsuarioVista#0" expanded="false" />
-            <element signature="method#datosCompletos#0;class#NuevoUsuarioVista#0" expanded="false" />
-            <element signature="method#buscarUsuario#0;class#NuevoUsuarioVista#0" expanded="false" />
-            <element signature="method#establecerDatos#0;class#NuevoUsuarioVista#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyDateChooser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -1099,6 +1018,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Conexion/ActualizarSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-994">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Vistas/VerPacienteVista.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1113,17 +1040,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Conexion/ActualizarSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-994">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Vistas/EditarUsuarioVista.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
+        <state relative-caret-position="703">
           <caret line="428" column="20" lean-forward="false" selection-start-line="428" selection-start-column="20" selection-end-line="428" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1141,10 +1060,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vistas/NuevoUsuarioVista.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="105" column="53" lean-forward="true" selection-start-line="105" selection-start-column="53" selection-end-line="105" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#CambiarImagen#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="class#BotonEditar#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="class#BotonNuevo#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="class#BotonRol#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="class#BuscarKeyAdapter#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="class#BuscarFocusAdapter#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="class#ListaBuscarMouseAdapter#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="class#ListaRolMouseAdapter#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#escogioRol#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#esCorreo#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#contraseñasIguales#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#datosPersonalesCompletos#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#datosContactoCompletos#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#datosCompletos#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#buscarUsuario#0;class#NuevoUsuarioVista#0" expanded="false" />
+            <element signature="method#establecerDatos#0;class#NuevoUsuarioVista#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vistas/NuevoAntecedenteVista.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="65" column="15" lean-forward="true" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vistas/NuevoRecomendacionVista.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="59" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4674#4675#0" expanded="true" />
+            <element signature="e#4729#4730#0" expanded="true" />
+            <element signature="e#4794#4795#0" expanded="true" />
+            <element signature="e#4850#4851#0" expanded="true" />
+            <element signature="e#5846#5847#0" expanded="true" />
+            <element signature="e#5899#5900#0" expanded="true" />
+            <element signature="e#5964#5965#0" expanded="true" />
+            <element signature="e#6018#6019#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Conexion/InsertarSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="277" column="0" lean-forward="true" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
+          <folding>
+            <element signature="method#insertarVenta#0;class#InsertarSQL#0" expanded="false" />
+            <element signature="method#insertarVentaServicio#0;class#InsertarSQL#0" expanded="false" />
+            <element signature="method#insertarVentaInfo#0;class#InsertarSQL#0" expanded="false" />
+            <element signature="method#insertarInventario#0;class#InsertarSQL#0" expanded="false" />
+            <element signature="method#insertarModificacion#0;class#InsertarSQL#0" expanded="false" />
+            <element signature="e#12708#12709#0" expanded="true" />
+            <element signature="e#12769#12770#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vistas/NuevoServicioVista.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Vistas/EditarPacienteVista.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="106" column="54" lean-forward="false" selection-start-line="106" selection-start-column="54" selection-end-line="106" selection-end-column="71" />
+        <state relative-caret-position="79">
+          <caret line="51" column="100" lean-forward="true" selection-start-line="51" selection-start-column="100" selection-end-line="51" selection-end-column="117" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#correoRepetido#0;class#EditarPacienteVista#0" expanded="false" />
@@ -1154,21 +1151,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frames/PrincipalFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/Vistas/NuevoVenta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="514" column="50" lean-forward="false" selection-start-line="514" selection-start-column="50" selection-end-line="514" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vistas/NuevoAntecedenteVista.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="53" column="114" lean-forward="false" selection-start-line="53" selection-start-column="114" selection-end-line="53" selection-end-column="114" />
+        <state relative-caret-position="91">
+          <caret line="63" column="4" lean-forward="true" selection-start-line="63" selection-start-column="4" selection-end-line="65" selection-end-column="114" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vistas/NuevoVentaProducto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-854">
+          <caret line="205" column="39" lean-forward="true" selection-start-line="205" selection-start-column="39" selection-end-line="205" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vistas/NuevoVentaServicio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3199">
+          <caret line="267" column="9" lean-forward="true" selection-start-line="267" selection-start-column="9" selection-end-line="267" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frames/PrincipalFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="559" column="33" lean-forward="false" selection-start-line="559" selection-start-column="33" selection-end-line="559" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>

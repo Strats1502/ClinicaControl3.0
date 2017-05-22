@@ -75,22 +75,20 @@ public class InsertarSQL {
         }
     }
 
-    public static void insertarVenta(int usuarioAlta,String folio, String formaPago, String tipoCliente, String correoPaciente, String nombre, String apellidoPaterno, String apellidoMaterno, String municipio, String colonia, String calleNumero, boolean activo) {
-        String sql = "INSERT INTO Venta VALUES(null, ?, ?, ?, current_date(), ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    public static void insertarVenta(int usuarioAlta, String formaPago, String tipoCliente, String correoPaciente, String nombre, String apellidoPaterno, String apellidoMaterno, String municipio, String colonia, String calleNumero) {
+        String sql = "INSERT INTO Venta VALUES(null, ?, ?, current_date(), ?, ?, ?, ?, ?, ?, ?, ?)";
         try {
             PreparedStatement ps = ConexionSQL.getConexion().prepareStatement(sql);
             ps.setInt(1, usuarioAlta);
-            ps.setString(2, folio);
-            ps.setString(3, formaPago);
-            ps.setString(4, tipoCliente);
-            ps.setString(5, correoPaciente);
-            ps.setString(6, nombre);
-            ps.setString(7, apellidoPaterno);
-            ps.setString(8, apellidoMaterno);
-            ps.setString(9, municipio);
-            ps.setString(10, colonia);
-            ps.setString(11, calleNumero);
-            ps.setBoolean(12, activo);
+            ps.setString(2, formaPago);
+            ps.setString(3, tipoCliente);
+            ps.setString(4, correoPaciente);
+            ps.setString(5, nombre);
+            ps.setString(6, apellidoPaterno);
+            ps.setString(7, apellidoMaterno);
+            ps.setString(8, municipio);
+            ps.setString(9, colonia);
+            ps.setString(10, calleNumero);
             ps.executeUpdate();
         } catch (SQLIntegrityConstraintViolationException sqlIntegrity) {
             System.out.println(sqlIntegrity.getMessage());
@@ -146,28 +144,27 @@ public class InsertarSQL {
         }
     }
 
-    public static void insertarVentaProducto(int ventaID,String folioVenta, int productoID, int cantidad) {
-        String sqlComprobarExistencia = "SELECT * FROM VentaProducto WHERE id_venta =  ? and id_producto = ?";
+    public static void insertarVentaProducto(String folioVenta, int productoID, int cantidad) {
+        String sqlComprobarExistencia = "SELECT * FROM VentaProducto WHERE folio_venta =  ? and id_producto = ?";
         try {
             PreparedStatement ps = ConexionSQL.getConexion().prepareStatement(sqlComprobarExistencia);
-            ps.setInt(1, ventaID);
+            ps.setString(1, folioVenta);
             ps.setInt(2, productoID);
             ps.executeQuery();
             ResultSet rs = ps.getResultSet();
             if(rs.next()) {
-                String sql = "UPDATE VentaProducto SET cantidad = cantidad + ? WHERE id_venta = ? and id_producto = ?";
+                String sql = "UPDATE VentaProducto SET cantidad = cantidad + ? WHERE folio_venta = ? and id_producto = ?";
                 PreparedStatement psE = ConexionSQL.getConexion().prepareStatement(sql);
                 psE.setInt(1, cantidad);
-                psE.setInt(2, ventaID);
+                psE.setString(2, folioVenta);
                 psE.setInt(3, productoID);
                 psE.executeUpdate();
             } else {
-                String sql = "INSERT INTO VentaProducto VALUES(?, ?, ?, ?)";
+                String sql = "INSERT INTO VentaProducto VALUES(?, ?, ?)";
                 PreparedStatement psI = ConexionSQL.getConexion().prepareStatement(sql);
-                psI.setInt(1, ventaID);
-                psI.setString(2, folioVenta);
-                psI.setInt(3, productoID);
-                psI.setInt(4, cantidad);
+                psI.setString(1, folioVenta);
+                psI.setInt(2, productoID);
+                psI.setInt(3, cantidad);
                 psI.executeUpdate();
             }
         } catch(SQLException sqlException) {
@@ -189,30 +186,45 @@ public class InsertarSQL {
         }*/
     }
 
-    public static void insertarVentaConsulta(int ventaID, String folioVenta, int pacienteID, int medicoID) {
-        String sql = "INSERT INTO VentaConsulta VALUES(?, ?, ?, ?)";
+    public static void insertarVentaServicio(String folioVenta, int pacienteID, int medicoID, String servicio, double precio) {
+        String sql = "INSERT INTO VentaServicio VALUES(?, ?, ?, ?, ?)";
         try {
             PreparedStatement ps = ConexionSQL.getConexion().prepareStatement(sql);
-            ps.setInt(1, ventaID);
-            ps.setString(2, folioVenta);
-            ps.setInt(3, pacienteID);
-            ps.setInt(4, medicoID);
+            ps.setString(1, folioVenta);
+            ps.setInt(2, pacienteID);
+            ps.setInt(3, medicoID);
+            ps.setString(4, servicio);
+            ps.setDouble(5, precio);
             ps.executeUpdate();
         } catch (SQLException sqlException) {
             System.err.println(sqlException.getMessage());
         }
     }
 
-    public static void insertarVentaInfo(int ventaID, String folioVenta, double subtotal, double iva, double total) {
-        String sql = "INSERT INTO VentaInfo VALUES(?, ?, ?, ?, ?)";
+    public static void insertarVentaInfo(String folioVenta, double subtotal, double iva, double total) {
+        String sql = "SELECT * FROM VentaInfo WHERE folio_venta = ?";
         try {
             PreparedStatement ps = ConexionSQL.getConexion().prepareStatement(sql);
-            ps.setInt(1, ventaID);
-            ps.setString(2, folioVenta);
-            ps.setDouble(3, subtotal);
-            ps.setDouble(4, iva);
-            ps.setDouble(5, total);
-            ps.executeUpdate();
+            ps.setString(1, folioVenta);
+            ps.executeQuery();
+            ResultSet rs = ps.getResultSet();
+            if (rs.next()) {
+                String sql2 = "UPDATE VentaInfo SET subtotal = subtotal + ? , iva = iva + ?, total = total + ? WHERE folio_venta = ?";
+                PreparedStatement ps2 = ConexionSQL.getConexion().prepareStatement(sql2);
+                ps2.setDouble(1, subtotal);
+                ps2.setDouble(2, iva);
+                ps2.setDouble(3, total);
+                ps2.setString(4, folioVenta);
+                ps2.executeUpdate();
+            } else {
+                String sql3 = "INSERT INTO VentaInfo VALUES(?, ?, ?, ?)";
+                PreparedStatement ps3 = ConexionSQL.getConexion().prepareStatement(sql3);
+                ps3.setString(1, folioVenta);
+                ps3.setDouble(2, subtotal);
+                ps3.setDouble(3, iva);
+                ps3.setDouble(4, total);
+                ps3.executeUpdate();
+            }
         } catch (SQLException sqlException) {
             System.err.println(sqlException.getMessage());
         }
@@ -260,6 +272,6 @@ public class InsertarSQL {
 
 
     public static void main(String[] args) {
-        InsertarSQL.insertarVentaInfo(1, "1", 23.0, 10, 33.0);
+        InsertarSQL.insertarVentaInfo("1", 23, 4, 27);
     }
 }
